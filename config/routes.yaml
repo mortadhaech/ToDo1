@@ -1,3 +1,15 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\TestController::index
+student:
+    path: /student
+    controller: App\Controller\StudentController::index
+showTeacher:
+    path: /teacher/{name}
+    controller: App\Controller\TeacherController::showTeacher
+    
+
+teacher_go_to_index:
+    path: /teacher/t/goToIndex
+    controller: App\Controller\TeacherController::goToIndex
+    
